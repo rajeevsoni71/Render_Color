@@ -26,6 +26,7 @@ bool Render_Base::prepareGL()
         EGL_NONE};
 
     // get the surface
+    WindowSurface windowSurface;
     EGLNativeWindowType window = windowSurface.getSurface();
 
     // Set up our OpenGL ES context associated with the default display
