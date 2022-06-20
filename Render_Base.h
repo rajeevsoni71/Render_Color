@@ -38,10 +38,6 @@ using namespace android;
 class Render_Base
 {
 public:
-    Render_Base() {
-        windowSurface = new WindowSurface();
-    }
-
     virtual ~Render_Base() {
         delete windowSurface;
     };
@@ -64,7 +60,6 @@ protected:
 
     // Window
     static EGLNativeWindowType sWindow;
-    WindowSurface windowSurface = 0;
         
     static GLint sDimension;
 };
