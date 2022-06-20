@@ -1,0 +1,7 @@
+
+service Render_Image /system/bin/Render_Image
+    class main
+    user system
+    group system
+    disabled
+    oneshot
